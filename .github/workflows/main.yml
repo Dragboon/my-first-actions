@@ -2,13 +2,16 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-
+env:
+  MY_VARIABLE: This is a variable
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Hello Github Actions
         run: echo Hello, Github Actions!
+      - name: Use my var
+        run: echo ${{env.MY_VARIABLE}}
