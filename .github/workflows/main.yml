@@ -24,7 +24,7 @@ jobs:
         run: echo "${{env.MY_VARIABLE}}"
 
       - name: Hello world dans un fichier
-        run: cat "Hello world" > hello.txt
+        run: echo "Hello world" > hello.txt
 
       - name: Afficher hello.txt
         run: cat hello.txt        
