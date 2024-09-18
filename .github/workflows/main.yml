@@ -15,6 +15,6 @@ jobs:
       - name: Hello Github Actions
         run: echo "Hello, Github Actions!"
       - name: Afficher la valeur du secret
-        run: echo "La valeur de MY_SECRET est: ${{secrets.MY_SECRET}}"
+        run: echo La valeur de MY_SECRET est : ${{secrets.MY_SECRET}}
       # - name: Use my var
       #   run: echo "${{env.MY_VARIABLE}}"
